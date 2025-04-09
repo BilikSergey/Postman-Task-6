@@ -9,31 +9,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout your repository
+      # Checkout the repository
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-      # Set up Node.js
+      # Install Node.js
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '16.x'
 
-      # Install Newman
+      # Install Newman and reporter
       - name: Install Newman
         run: |
           npm install -g newman
           npm install -g newman-reporter-htmlextra
 
-      # Run the Petstore Collection (against local server, replace with your local URL)
-      - name: Run Petstore collection
+      # Run the Postman collection
+      - name: Run Postman collection
         run: |
           newman run https://raw.githubusercontent.com/postman/openapi-samples/master/petstore/postman/petstore.postman_collection.json \
-          --env-var "baseUrl=http://localhost:3000" \
           -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme
 
-      # Upload the test results
+      # Upload test results
       - name: Upload test results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2.2.4  # or @v2.2.4 if @v3 fails
         with:
           name: TestResults
           path: testResults
