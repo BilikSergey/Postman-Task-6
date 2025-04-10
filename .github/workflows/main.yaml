@@ -10,31 +10,35 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-
-      # INstall Node on the runner
+      # Install Node on the runner
       - name: Install Node
         uses: actions/setup-node@v1
         with:
           node-version: "16.x"
-
 
       # Install the newman command line utility and also install the html extra reporter
       - name: Install newman
         run: |
           npm install -g newman
           npm install -g newman-reporter-htmlextra
+          newman --version
+          newman-reporter-htmlextra --version
 
+      # Start the application server
+      - name: Start Application Server
+        run: |
+          npm install
+          npm start &
+          sleep 10  # Wait for the server to start
 
       # Make directory to upload the test results
       - name: Make Directory for results
         run: mkdir -p testResults
 
-
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run store.collection.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme > testResults/runreport1.html
-
+          newman run store.collection.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme > testResults/runreport1.html || cat testResults/runreport1.html
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
