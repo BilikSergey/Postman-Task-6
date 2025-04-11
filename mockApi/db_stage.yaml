@@ -1,167 +1,120 @@
 products:
-  - name: orange
-    price: 8
-    sku: 123321123
-    description: wouh
-    id: 1
-  - name: watermelon
-    price: 8
-    sku: 123451123
-    description: gdya
-    id: 2
-  - name: melon
-    price: 3
-    sku: 123457163
-    description: ynxf
-    id: 3
+  - id: 1
+    name: tomato
+    price: 10
+    sku: 1232143543543
+    description: They are usually red, scarlet, or yellow, though green and purple
+      varieties do exist, and they vary in shape from almost spherical to oval
+      and elongate to pear-shaped.
+  - id: 2
+    name: lettuce
+    price: 20
+    sku: 999921312423
+    description: Most lettuce varieties are eaten fresh and are commonly served as
+      the base of green salads
+  - id: 3
+    name: apple
+    price: 30
+    sku: 999921312423312
+    description: awesome
 orders:
   - id: 1
-    name: order1
+    name: Laptop
     sku: 1232143543543
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
   - id: 2
     name: order2
     sku: 999921312423
   - id: 3
     name: order2
     sku: 999921312423312
-  - name: order5
-    sku: 123425445656765
-    id: 4
-  - name: order5
-    sku: 123425445656765
-    id: 5
-  - name: order5
-    sku: 123425445656765
+  - id: 4
+    name: Smartphone
+    price: 500.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - id: 5
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
     id: 6
-  - name: order5
-    sku: 123425445656765
+  - name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
     id: 7
-  - checked: false
-    dimensions:
-      width: 5
-      height: 10
-    id: 8
-    name: A green door
-    price: 12.5
-    tags:
-      - home
-      - green
-  - checked: false
-    dimensions:
-      width: 5
-      height: 10
-    id: 9
-    name: A green door
-    price: 12.5
-    tags:
-      - home
-      - green
-  - checked: false
-    dimensions:
-      width: 5
-      height: 10
-    id: 10
-    name: A green door
-    price: 12.5
-    tags:
-      - home
-      - green
-  - checked: false
-    dimensions:
-      width: 5
-      height: 10
-    id: 11
-    name: A green door
-    price: 12.5
-    tags:
-      - home
-      - green
-  - checked: false
-    dimensions:
-      width: 5
-      height: 10
-    id: 12
-    name: A green door
-    price: 12.5
-    tags:
-      - home
-      - green
-  - checked: false
-    dimensions:
-      width: 5
-      height: 10
+  - id: 8
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - id: 9
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - id: 10
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - id: 11
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - id: 12
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
     id: 13
-    name: A green door
-    price: 12.5
-    tags:
-      - home
-      - green
-  - name: order5
-    sku: 123425445656765
+  - name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
     id: 14
-  - name: order5
-    sku: 123425445656765
-    id: 15
-  - name: order5
-    sku: 123425445656765
-    id: 16
-  - name: order5
-    sku: 123425445656765
-    id: 17
-  - name: order5
-    sku: 123425445656765
-    id: 18
-  - name: order5
-    sku: 123425445656765
+  - id: 15
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - id: 16
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - id: 17
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - id: 18
+    name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
+  - name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
     id: 19
-  - name: order5
-    sku: 123425445656765
+  - name: Laptop
+    price: 999.99
+    status: shipped
+    createdAt: 2023-04-01T12:00:00Z
     id: 20
-  - name: order5
-    sku: 123425445656765
-    id: 21
-  - name: order5
-    sku: 123425445656765
-    id: 22
-  - name: order5
-    sku: 123425445656765
-    id: 23
-  - name: order5
-    sku: 123425445656765
-    id: 24
-  - name: order5
-    sku: 123425445656765
-    id: 25
-  - id: 26
-    name: Laptop
-    price: 999.99
-    status: shipped
-    createdAt: 2023-04-01T12:00:00Z
-  - id: 27
-    name: Laptop
-    price: 999.99
-    status: shipped
-    createdAt: 2023-04-01T12:00:00Z
-  - id: 28
-    name: Laptop
-    price: 999.99
-    status: shipped
-    createdAt: 2023-04-01T12:00:00Z
-  - id: 29
-    name: Laptop
-    price: 999.99
-    status: shipped
-    createdAt: 2023-04-01T12:00:00Z
-  - id: 30
-    name: Laptop
-    price: 999.99
-    status: shipped
-    createdAt: 2023-04-01T12:00:00Z
-  - id: 31
-    name: Laptop
-    price: 999.99
-    status: shipped
-    createdAt: 2023-04-01T12:00:00Z
 users:
   - id: 1
     firstName: Alice
@@ -235,3 +188,30 @@ users:
     signUpDate: 2019-08-24
     status: active
     level: consumer
+  - id: 9
+    firstName: asdasd
+    lastName: asd
+    email: asdasd.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: false
+    signUpDate: 2019-08-24
+    status: active
+    level: consumer
+  - firstName: Dream
+    lastName: Real
+    email: dream.real@gmail.com
+    dateOfBirth: 2001-10-99
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: lord
+    id: 10
+  - firstName: Dream
+    lastName: Real
+    email: dream.real@gmail.com
+    dateOfBirth: 2001-10-99
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: lord
+    id: 11
